@@ -1,0 +1,22 @@
+.inspiration {
+  font-family: "Red Rose", cursive;
+  padding: 100px 30px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.inspiration h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 0em;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.container {
+  display: grid;
+  gap: 20px 20px;
+  grid-template-columns: repeat(4, 1fr);
+}
