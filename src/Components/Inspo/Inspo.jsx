@@ -10,7 +10,7 @@ const Inspo = ({ ImageName }) => {
       </div>
       <div className={classes.box}>
         <p className={classes.text}>Desert king</p>
-        <p className={(classes.text, classes.bold)}>1MBT per night</p>
+        <p className={`${classes.text} ${classes.bold}`}>1MBT per night</p>
       </div>
       <div className={classes.box}>
         <p className={classes.text}>2345km away</p>
