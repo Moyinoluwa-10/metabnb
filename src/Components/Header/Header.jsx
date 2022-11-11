@@ -12,12 +12,16 @@ const Header = () => {
   return (
     <div
       className={
-        responsive ? (classes.headerpage, classes.active) : classes.headerpage
+        responsive
+          ? [classes.headerpage, classes.active].join(" ")
+          : classes.headerpage
       }
     >
       <header
         className={
-          responsive ? (classes.header, classes.active) : classes.header
+          responsive
+            ? [classes.header, classes.active].join(" ")
+            : classes.header
         }
       >
         <div className={classes.headerContainer}>
@@ -28,7 +32,7 @@ const Header = () => {
           <div
             className={
               responsive
-                ? (classes.hamburger, classes.active)
+                ? [classes.hamburger, classes.active].join(" ")
                 : classes.hamburger
             }
             onClick={handleClick}
