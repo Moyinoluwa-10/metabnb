@@ -5,8 +5,43 @@
   align-items: center;
   justify-content: space-between;
 }
-/* 
+
+.imageContainer {
+  width: 220px;
+}
+
 img {
-  width: 200px;
-  height: 30px;
-} */
+  width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .sponsor {
+    padding: 12px 50px;
+  }
+
+  .imageContainer {
+    width: 180px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sponsor {
+    padding: 14px 20px;
+  }
+
+  .imageContainer {
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .sponsor {
+    padding: 20px;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .imageContainer {
+    width: 150px;
+  }
+}

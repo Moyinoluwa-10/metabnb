@@ -7,13 +7,13 @@ import Opensea from "../../assets/svgs/opensea.svg";
 const Sponsor = () => {
   return (
     <div className={classes.sponsor}>
-      <div>
+      <div className={classes.imageContainer}>
         <img src={MBToken} alt="mbtoken-logo" />
       </div>
-      <div>
+      <div className={classes.imageContainer}>
         <img src={Metamask} alt="metamask-logo" />
       </div>
-      <div>
+      <div className={classes.imageContainer}>
         <img src={Opensea} alt="opensea-logo" />
       </div>
     </div>

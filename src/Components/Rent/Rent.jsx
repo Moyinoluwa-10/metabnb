@@ -16,45 +16,49 @@ const Rent = () => {
   };
   return (
     <div className={classes.rent}>
-      <div className={classes.left}>
-        <h1>
-          Rent a <span> Place </span> away from <span>Home</span> in the{" "}
-          <span>Metaverse</span>
-        </h1>
-        <p>
-          we provide you access to luxury and affordable houses in the
-          metaverse, get a chance to turn your imagination to reality at your
-          comfort zone
-        </p>
-        <form onSubmit={handleSubmit}>
-          <div>
-            <input
-              type="text"
-              name="search"
-              placeholder="Search for location"
-              value={search}
-              onChange={handleChange}
-            />
-            <button>Search</button>
-          </div>
-        </form>
-      </div>
+      <div className={classes.wrapper}>
+        <div className={classes.left}>
+          <h1>
+            Rent a <span> Place </span> away from <span>Home</span> in the{" "}
+            <span>Metaverse</span>
+          </h1>
 
-      <div className={classes.right}>
-        <div className={classes.cont1}>
-          <div>
-            <img src={Rent1} alt="pic1" />
-          </div>
-          <div>
-            <img src={Rent2} alt="pic2" />
-          </div>
+          <p>
+            We provide you access to luxury and affordable houses in the
+            metaverse, get a chance to turn your imagination to reality at your
+            comfort zone.
+          </p>
+
+          <form onSubmit={handleSubmit}>
+            <div>
+              <input
+                type="text"
+                name="search"
+                placeholder="Search for location"
+                value={search}
+                onChange={handleChange}
+              />
+              <button>Search</button>
+            </div>
+          </form>
         </div>
-        <div className={classes.cont2}>
-          <div>
-            <img src={Rent3} alt="pic3" />
+
+        <div className={classes.right}>
+          <div className={classes.cont1}>
+            <div className={classes["image-container"]}>
+              <img src={Rent1} alt="pic1" />
+            </div>
+            <div className={classes["image-container"]}>
+              <img src={Rent2} alt="pic2" />
+            </div>
           </div>
-          <div>
-            <img src={Rent4} alt="pic4" />
+          <div className={classes.cont2}>
+            <div className={classes["image-container"]}>
+              <img src={Rent3} alt="pic3" />
+            </div>
+            <div className={classes["image-container"]}>
+              <img src={Rent4} alt="pic4" />
+            </div>
           </div>
         </div>
       </div>
