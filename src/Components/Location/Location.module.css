@@ -24,6 +24,9 @@
   border: 1px solid #b4b4b4;
   padding: 10px 20px;
   border-radius: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
 }
 
 .location p {
@@ -38,21 +41,24 @@
   .wrapper {
     grid-template-columns: repeat(5, 1fr);
     row-gap: 30px;
+    column-gap: 5px;
   }
 }
 
 @media screen and (max-width: 800px) {
   .wrapper {
     grid-template-columns: repeat(4, 1fr);
-    row-gap: 30px;
   }
 }
 
 @media screen and (max-width: 600px) {
   .wrapper {
     grid-template-columns: repeat(3, 1fr);
-    row-gap: 30px;
-    justify-content: center;
-    align-content: center;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .wrapper {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
