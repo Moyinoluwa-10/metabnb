@@ -3,6 +3,7 @@
   padding: 16px;
   font-family: "Red Rose", cursive;
   width: 100%;
+  max-width: 295px;
   border-radius: 15px;
 }
 

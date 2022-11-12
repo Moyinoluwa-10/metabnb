@@ -1,6 +1,6 @@
 .inspiration {
   font-family: "Red Rose", cursive;
-  padding: 100px 30px;
+  padding: 100px 30px 50px;
   max-width: 1300px;
   margin: 0 auto;
 }
@@ -19,4 +19,41 @@
   display: grid;
   gap: 20px 20px;
   grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+/* RESPONSIVENESS */
+@media screen and (max-width: 1050px) {
+  .inspiration h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .inspiration h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .inspiration h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

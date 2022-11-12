@@ -6,7 +6,11 @@
   background: #a02279;
   position: relative;
   width: 100%;
-  gap: 20%;
+  gap: 25%;
+}
+
+.left {
+  min-width: 300px;
 }
 
 .left h1 {
@@ -36,23 +40,37 @@
   font-weight: 400;
   line-height: 19px;
   text-decoration: none;
+  transition: all 0.3s ease;
+  display: block;
+  width: 155px;
+}
+
+.left a:hover {
+  background: #360e29;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  padding: 9px 30px;
+}
+
+.left a:active {
+  transform: scale(0.95);
+}
+
+.right {
+  position: relative;
+  width: 500px;
+  max-width: 90%;
+  height: 100%;
 }
 
 .imageContainer {
-  width: 380px;
-  /* height: 250px; */
+  width: 340px;
   border-radius: 10px;
   overflow: hidden;
 }
 
 .imageContainer img {
   width: 100%;
-  height: 100%;
-}
-
-.right {
-  position: relative;
-  max-width: 600px;
   height: 100%;
 }
 
@@ -72,4 +90,120 @@
   position: absolute;
   z-index: 3;
   transform: translate(30%, 0%);
+}
+
+/* RESPONSIVENESS */
+@media screen and (max-width: 1200px) {
+  .nfts {
+    gap: 200px;
+  }
+
+  .imageContainer {
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .nfts {
+    flex-direction: column-reverse;
+    gap: 200px;
+    padding-bottom: 100px;
+    padding-top: 220px;
+  }
+
+  .left a {
+    display: block;
+    text-align: center;
+    width: 300px;
+    max-width: 95%;
+    margin: 0 auto;
+  }
+
+  .right {
+    width: 500px;
+    max-width: 500px;
+  }
+
+  .imageContainer {
+    width: 300px;
+  }
+
+  .left h1 {
+    margin-top: 90px;
+    text-align: center;
+  }
+
+  .left p {
+    text-align: center;
+  }
+
+  .container1 {
+    left: 50%;
+    transform: translate(-40%, -75%);
+  }
+
+  .container2 {
+    left: 50%;
+    transform: translate(-90%, -25%);
+  }
+
+  .container3 {
+    left: 50%;
+    transform: translate(-20%, 0%);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .right {
+    position: relative;
+    width: 300px;
+    max-width: 90%;
+    height: 100%;
+  }
+
+  .imageContainer {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .left h1 {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .left p {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .left a {
+    width: 200px;
+  }
+
+  .imageContainer {
+    width: 190px;
+  }
+
+  .container1 {
+    transform: translate(-35%, -75%);
+  }
+
+  .container2 {
+    transform: translate(-85%, -25%);
+  }
+
+  .container3 {
+    transform: translate(-15%, 0%);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .imageContainer {
+    width: 160px;
+  }
 }

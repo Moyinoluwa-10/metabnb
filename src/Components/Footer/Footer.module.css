@@ -1,11 +1,13 @@
 .footer {
   font-family: "Red Rose", cursive;
-  padding: 80px 30px 30px;
+  padding: 80px 60px 30px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   background: #1d1d1e;
   color: #f1f3f9;
-  padding-right: 100px;
+  padding-right: 200px;
+  flex-wrap: wrap;
+  gap: 120px;
 }
 
 .footer .image-container {
@@ -39,14 +41,38 @@
   line-height: 35px;
   color: #f1f3f9;
   text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footer a:hover {
+  color: #a02279;
+}
+
+.footer .socials {
+  display: flex;
+  gap: 30px;
+  margin: 40px 0;
 }
 
 .footer .socials a {
   font-size: 20px;
 }
 
-.footer .socials {
-  display: flex;
-  gap: 40px;
-  margin: 40px 0;
+/* RESPONSIVENESS */
+@media screen and (max-width: 800px) {
+  .footer {
+    padding-right: 60px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    padding: 80px 45px 30px;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .footer .image-container {
+    width: 180px;
+  }
 }
